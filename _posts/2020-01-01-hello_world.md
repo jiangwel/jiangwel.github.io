@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello, World!
-author: Jiang wei
+title: NO TITLE
+author: jiang wei
 tags: article, nextjs, js
 ---
