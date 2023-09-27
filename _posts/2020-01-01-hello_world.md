@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello, World!
-author: John Doe
+author: Jiang wei
 tags: article, nextjs, js
 ---
 
