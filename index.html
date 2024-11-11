@@ -8,7 +8,7 @@ layout: default
   <article class="post">
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
     <div class="entry">{{ post.content | strip_html | truncatewords:40}}</div>
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">더 읽기</a>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
   </article>
   {% endfor %}
 </div>
@@ -19,10 +19,10 @@ layout: default
   {% if paginator.previous_page %}
   <a
     href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-    >&laquo; 이전</a
+    >&laquo; Previous</a
   >
   {% else %}
-  <span>&laquo; 이전</span>
+  <span>&laquo; Previous</span>
   {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
   paginator.page %}
   <em>{{ page }}</em>
@@ -38,10 +38,10 @@ layout: default
   {% endif %} {% endfor %} {% if paginator.next_page %}
   <a
     href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-    >다음 &raquo;</a
+    >Next &raquo;</a
   >
   {% else %}
-  <span>다음 &raquo;</span>
+  <span>Next &raquo;</span>
   {% endif %}
 </div>
 {% endif %}
