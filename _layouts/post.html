@@ -28,3 +28,20 @@ layout: default
 
 <!-- responsive video js -->
 <script src="/js/fluidvids.js"></script>
+
+<!-- Disqus评论功能 -->
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = '{{ page.url | absolute_url }}';
+    this.page.identifier = '{{ page.disqus_identifier }}';
+  };
+
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://disqus_aQ2ufAIBTP.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>请启用JavaScript以查看<a href="https://disqus.com/?ref_noscript">Disqus评论</a></noscript>
